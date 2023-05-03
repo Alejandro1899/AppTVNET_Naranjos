@@ -18,4 +18,4 @@ namespace AppTVNET_Naranjos.Vistas
             BindingContext = new RegistrerView();
 		}
 	}
-}
+} 
