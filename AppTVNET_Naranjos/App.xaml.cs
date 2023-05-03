@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppTVNET_Naranjos.Vistas;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,9 @@ namespace AppTVNET_Naranjos
         public App()
         {
             InitializeComponent();
+            
+            MainPage = new NavigationPage(new Login());
 
-            MainPage = new MainPage();
         }
 
         protected override void OnStart()

@@ -14,5 +14,10 @@ namespace AppTVNET_Naranjos
         {
             InitializeComponent();
         }
+         
+        private void btnLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTVNET_Naranjos.Android",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTVNET_Naranjos.iOS", "AppTVNET_Naranjos.iOS\AppTVNET_Naranjos.iOS.csproj", "{0F093D20-9B53-459E-A6CB-CA6A372F9D4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTVNET_Naranjos", "AppTVNET_Naranjos\AppTVNET_Naranjos.csproj", "{F94EEB6B-88AC-4B4A-8A11-649D4F6E75CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppTVNET_Naranjos", "AppTVNET_Naranjos\AppTVNET_Naranjos.csproj", "{F94EEB6B-88AC-4B4A-8A11-649D4F6E75CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

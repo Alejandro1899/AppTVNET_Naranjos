@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTVNET_Naranjos.Vistas.Login"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout BackgroundColor="#0092D3">
+
+        <Label Text="Bienvenido, inicia sesión"
+                   FontSize="34"  TextColor="#fff"
+                   FontAttributes="Bold" HorizontalOptions="CenterAndExpand"
+                   Margin="0,50,0,30" />
+
+        <Frame CornerRadius="10"
+                Margin="30, 10"
+                BackgroundColor="White">
+            
+            <StackLayout >
+                
+                <Image Source="rostro.png"
+                       Margin="30,20"/>
+
+                <Frame  HasShadow="False"
+                        Margin="0"
+                        Padding="0, 10">
+                    <StackLayout Padding="0" Spacing="10" Orientation="Horizontal">
+
+                        <Image  Source="usuario.png" />
+                        
+                        <Entry 
+                                Placeholder="Correo electrónico"
+                                Text= "{Binding Email}"
+                                 HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame HasShadow="False"
+                       Margin="0"
+                       Padding="0,10">
+
+                    <StackLayout Padding="0"
+                                 Spacing="10"
+                                 Orientation="Horizontal">
+
+                        <Image Source="bloquear.png" />
+
+                        <Entry Placeholder="Contraseña "
+                               Text="{Binding Password}"
+                               IsPassword="True"
+                               HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+        </Frame>
+        
+        <Button  Text="Iniciar sesión"
+                 TextColor="#0092D3"
+                 BackgroundColor="#ffff"
+                 TextTransform="None" 
+                 FontAttributes="Bold" FontSize="Large"
+                 CornerRadius="15"
+                 Command="{Binding LoginCommand}"
+                 Margin="50, 20"
+                 />
+
+        <Label  Padding="0,50"
+                LineBreakMode="WordWrap"
+                FontSize="16">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="¿No tienes una cuenta? "
+                          TextColor="White"/>
+                    <Span Text="Resitrate aqui"
+                          TextColor="White"
+                          TextDecorations="Underline"
+                          FontAttributes="Bold"
+                          FontSize="16"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+            <Label Text="{Binding ErrorMessage}"
+               FontSize="Medium"
+               TextColor="Red"
+               Margin="30,20,30,0" />
+    </StackLayout>
+    
+    
+</ContentPage>
