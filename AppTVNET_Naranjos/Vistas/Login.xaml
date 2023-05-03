@@ -7,12 +7,9 @@
 
     <StackLayout BackgroundColor="#0092D3">
 
-
         <Label Text="Bienvenido, inicia sesión"
-                   FontSize="34"
-                   TextColor="#fff"
-                   FontAttributes="Bold"
-                   HorizontalOptions="CenterAndExpand"
+                   FontSize="34"  TextColor="#fff"
+                   FontAttributes="Bold" HorizontalOptions="CenterAndExpand"
                    Margin="0,50,0,30" />
 
         <Frame CornerRadius="10"
@@ -23,7 +20,6 @@
                 
                 <Image Source="rostro.png"
                        Margin="30,20"/>
-
 
                 <Frame  HasShadow="False"
                         Margin="0"
@@ -39,27 +35,28 @@
                     </StackLayout>
                 </Frame>
 
-
                 <Frame HasShadow="False"
                        Margin="0"
                        Padding="0,10">
 
-                    <StackLayout Padding="0" Spacing="10" Orientation="Horizontal">
+                    <StackLayout Padding="0"
+                                 Spacing="10"
+                                 Orientation="Horizontal">
 
                         <Image Source="bloquear.png" />
-                        
+
                         <Entry Placeholder="Contraseña "
                                Text="{Binding Password}"
                                IsPassword="True"
-                               HorizontalOptions="FillAndExpand"/>
+                               HorizontalOptions="FillAndExpand" />
                     </StackLayout>
-                    
-                </Frame>
 
+                </Frame>
 
             </StackLayout>
 
         </Frame>
+        
         <Button  Text="Iniciar sesión"
                  TextColor="#0092D3"
                  BackgroundColor="#ffff"

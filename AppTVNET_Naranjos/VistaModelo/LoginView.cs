@@ -5,9 +5,9 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace AppTVNET_Naranjos.Vistas
+namespace AppTVNET_Naranjos.VistaModelo
 {
-    class RegistrerView : INotifyPropertyChanged
+    class LoginView : INotifyPropertyChanged
     {
         private string email;
         public string Email
@@ -16,7 +16,7 @@ namespace AppTVNET_Naranjos.Vistas
             set
             {
                 email = value;
-                OnPropertyChanged("RegisterEmail");
+                OnPropertyChanged("Email");
             }
         }
 
@@ -27,18 +27,7 @@ namespace AppTVNET_Naranjos.Vistas
             set
             {
                 password = value;
-                OnPropertyChanged("RegisterPassword");
-            }
-        }
-
-        private string confirmPassword;
-        public string ConfirmPassword
-        {
-            get { return confirmPassword; }
-            set
-            {
-                confirmPassword = value;
-                OnPropertyChanged("ConfirmPassword");
+                OnPropertyChanged("Password");
             }
         }
 
@@ -53,14 +42,14 @@ namespace AppTVNET_Naranjos.Vistas
             }
         }
 
-        public ICommand RegistrerCommand { get; set; }
+        public ICommand LoginCommand { get; set; }
 
-        public RegistrerView()
+        public LoginView()
         {
-            RegistrerCommand = new Command(RegistrerPage);
+            LoginCommand = new Command(Login);
         }
 
-        private void RegistrerPage()
+        private void Login()
         {
             // Aquí iría la lógica para autenticar al usuario.
             // Si el inicio de sesión es exitoso, se podría navegar a otra página de la aplicación.
