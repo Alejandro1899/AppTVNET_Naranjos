@@ -17,7 +17,7 @@
                 BackgroundColor="White">
             
             <StackLayout >
-                
+
                 <Image Source="rostro.png"
                        Margin="30,20"/>
 
@@ -28,8 +28,7 @@
 
                         <Image  Source="usuario.png" />
                         
-                        <Entry 
-                                Placeholder="Correo electrónico"
+                        <Entry  Placeholder="Correo electrónico"
                                 Text= "{Binding Email}"
                                  HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
@@ -43,7 +42,8 @@
                                  Spacing="10"
                                  Orientation="Horizontal">
 
-                        <Image Source="bloquear.png" />
+                        <Image Source="bloquear.png" 
+                               />
 
                         <Entry Placeholder="Contraseña "
                                Text="{Binding Password}"
@@ -67,18 +67,20 @@
                  Margin="50, 20"
                  />
 
-        <Label  Padding="0,50"
+        <Label  Padding="50,30"
                 LineBreakMode="WordWrap"
                 FontSize="16">
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="¿No tienes una cuenta? "
                           TextColor="White"/>
+                    
                     <Span Text="Resitrate aqui"
                           TextColor="White"
                           TextDecorations="Underline"
                           FontAttributes="Bold"
                           FontSize="16"/>
+             
                 </FormattedString>
             </Label.FormattedText>
         </Label>
