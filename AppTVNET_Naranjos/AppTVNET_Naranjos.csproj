@@ -16,13 +16,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Vistas\HomePage.xaml">
+    <Compile Update="Vistas\VRegistrerPage.xaml.cs">
+      <DependentUpon>VRegistrerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Vistas\VLogin.xaml.cs">
+      <DependentUpon>VLogin.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Vistas\VHelpPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Vistas\Login.xaml">
+    <EmbeddedResource Update="Vistas\VHomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Vistas\RegistrerPage.xaml">
+    <EmbeddedResource Update="Vistas\VLogin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\VRegistrerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\VProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\VTabbedNavegation.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

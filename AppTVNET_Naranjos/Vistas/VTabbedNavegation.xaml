@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:AppTVNET_Naranjos.Vistas"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="AppTVNET_Naranjos.Vistas.VTabbedNavegation"
+            BackgroundColor="AntiqueWhite"
+            BarBackground="#BAAC97"
+            UnselectedTabColor="DarkSlateGray"
+            SelectedTabColor="#000"  >
+
+    <!--Pages can be added as references or inline-->
+    <local:VProfilePage Title="Perfil" />
+    <local:VHomePage Title="Inicio"/>
+    <local:VHelpPage  Title="Ayuda" />
+</TabbedPage>

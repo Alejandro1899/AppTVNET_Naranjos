@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoMVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -7,10 +8,28 @@ using Xamarin.Forms;
 
 namespace AppTVNET_Naranjos.VistaModelo
 {
-    class LoginView : INotifyPropertyChanged
+    class LoginView : BaseViewModel
     {
+        #region Variables
         private string email;
+        private string errorMessage;
+        private string password;
+
+
+        #endregion
+
+        #region CONSTRUCTOR
+        public LoginView(INavigation navigation)
+        {
+            Navigation = navigation;
+
+        }
+
+        #endregion
+
+        #region OBJETOS
         public string Email
+
         {
             get { return email; }
             set
@@ -20,7 +39,6 @@ namespace AppTVNET_Naranjos.VistaModelo
             }
         }
 
-        private string password;
         public string Password
         {
             get { return password; }
@@ -31,7 +49,6 @@ namespace AppTVNET_Naranjos.VistaModelo
             }
         }
 
-        private string errorMessage;
         public string ErrorMessage
         {
             get { return errorMessage; }
@@ -42,6 +59,8 @@ namespace AppTVNET_Naranjos.VistaModelo
             }
         }
 
+        #endregion
+
         public ICommand LoginCommand { get; set; }
 
         public LoginView()
@@ -49,18 +68,12 @@ namespace AppTVNET_Naranjos.VistaModelo
             LoginCommand = new Command(Login);
         }
 
+
         private void Login()
         {
             // Aquí iría la lógica para autenticar al usuario.
             // Si el inicio de sesión es exitoso, se podría navegar a otra página de la aplicación.
             // Si hay un error de autenticación, se podría mostrar un mensaje de error en la etiqueta ErrorMessage.
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }

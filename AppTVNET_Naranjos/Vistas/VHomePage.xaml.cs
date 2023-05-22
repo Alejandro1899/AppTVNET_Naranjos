@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppTVNET_Naranjos.Vistas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class VHomePage : ContentPage
     {
-        public HomePage()
+        public VHomePage()
         {
             InitializeComponent();
         }
