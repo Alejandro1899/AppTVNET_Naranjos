@@ -5,7 +5,7 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="AppTVNET_Naranjos.Vistas.VTabbedNavegation"
-            BackgroundColor="AntiqueWhite"
+            BackgroundColor="#f2f2f2"
             BarBackground="#BAAC97"
             UnselectedTabColor="DarkSlateGray"
             SelectedTabColor="#000"  >

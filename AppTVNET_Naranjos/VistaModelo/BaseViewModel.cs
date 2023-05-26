@@ -57,7 +57,6 @@ namespace CursoMVVM.ViewModel
 
             return true;
         }
-
         private string _title;
         public string Title
         {
@@ -67,7 +66,6 @@ namespace CursoMVVM.ViewModel
                 SetProperty(ref _title, value);
             }
         }
-
         private bool _isBusy;
         public bool IsBusy
         {
@@ -80,17 +78,11 @@ namespace CursoMVVM.ViewModel
         protected void SetValue<T>(ref T backingFieled, T value, [CallerMemberName] string propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(backingFieled, value))
-
             {
-
                 return;
-
             }
-
             backingFieled = value;
-
             OnPropertyChanged(propertyName);
         }
-
     }
 }
