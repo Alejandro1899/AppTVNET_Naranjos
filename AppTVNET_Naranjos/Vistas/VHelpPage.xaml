@@ -3,11 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTVNET_Naranjos.Vistas.VHelpPage"
              IconImageSource="ayuda.png">
-    <ContentPage.Content>
+
+    <Grid BackgroundColor="#ECF2FB"
+          RowDefinitions="200,*">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" Margin="10,40,0,10">
+                <Label Text="Asistencia técnica" HorizontalOptions="Center"
+                       Margin="20,0,10,0"
+                       TextColor="#416FB0"
+                       FontFamily="Roboto"
+                       FontAttributes="Bold"
+                       FontSize="38"/>
+                <Image Source="auriculares_blue.png"
+                       HeightRequest="40" 
+                       HorizontalOptions="End" />
+            </StackLayout>
+            <Label Text="¿Cómo podemos ayudarte?"
+                   FontSize="30" HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="#2C2B2B" Margin="10,40,10,0"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <Frame Grid.Row="1" CornerRadius="10"
+               Margin="10,10,10,80">
+            <StackLayout>
+                <Label Text="Quiero reportar unn problema."
+                       FontSize="24"
+                       TextColor="#2C2B2B" Margin="0,0,0,20"/>
+                <Label  Text="¿Cual es mi fecha de pago?"
+                       FontSize="24"
+                       TextColor="#2C2B2B" />
+
+                <BoxView  HorizontalOptions="Fill"
+                          HeightRequest="2"
+                          Color="#D8DDE5" 
+                          Margin="-20,40,-20,20"/>
+                <Label  Text="Preguntas Frecuentes"
+                        HorizontalOptions="Center"
+                        FontSize="24" FontAttributes="Bold"
+                        TextColor="#2C2B2B" />
+                
+                <Button  Text="Ver" TextColor="White" TextTransform="None" FontAttributes="Bold"
+                         FontSize="Large" CornerRadius="15"
+                         BackgroundColor="#0068AF" Margin="100,20,100,0"/>
+
+            </StackLayout>
+        </Frame>
+    </Grid>
 </ContentPage>
