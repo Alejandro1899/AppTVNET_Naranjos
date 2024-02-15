@@ -16,7 +16,7 @@
                    CornerRadius="15">
                 <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" >
                 
-                    <Label Text="Carcando" HorizontalOptions="Center" />
+                    <Label Text="cargando" HorizontalOptions="Center" />
                 </StackLayout>
             </Frame>
         </StackLayout>

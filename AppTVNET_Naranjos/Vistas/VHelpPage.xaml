@@ -5,7 +5,7 @@
              IconImageSource="ayuda.png">
 
     <Grid BackgroundColor="#ECF2FB"
-          RowDefinitions="200,*">
+          RowDefinitions="250,*">
         <StackLayout>
             <StackLayout Orientation="Horizontal" Margin="10,40,0,10">
                 <Label Text="Asistencia técnica" HorizontalOptions="Center"
@@ -13,7 +13,7 @@
                        TextColor="#416FB0"
                        FontFamily="Roboto"
                        FontAttributes="Bold"
-                       FontSize="38"/>
+                       FontSize="36"/>
                 <Image Source="auriculares_blue.png"
                        HeightRequest="40" 
                        HorizontalOptions="End" />
