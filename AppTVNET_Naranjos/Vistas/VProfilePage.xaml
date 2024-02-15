@@ -25,11 +25,11 @@
                            HeightRequest="80" />
                     
 
-                    <Label Text="Nombre de Usuario"
+                    <Label Text="Eduardo Bautista"
                            FontAttributes="Bold"
                            FontSize="Large"
                            HorizontalOptions="Center" />
-                    <Label Text="no de contrato"
+                    <Label Text="No de contrato"
                            FontAttributes="Italic"
                            FontSize="Caption"
                            HorizontalOptions="Center" />
