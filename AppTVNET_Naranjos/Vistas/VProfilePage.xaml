@@ -27,7 +27,7 @@
 
                     <Label Text="Nombre de usuario "
                            FontAttributes="Bold"
-                           FontSize="Large"
+                           FontSize="46"
                            HorizontalOptions="Center" />
                     <Label Text="No de contrato"
                            FontAttributes="Italic"
