@@ -27,7 +27,7 @@
 
                     <Label Text="Nombre de usuario "
                            FontAttributes="Bold"
-                           FontSize="46"
+                           FontSize="Medium"
                            HorizontalOptions="Center" />
                     <Label Text="No de contrato"
                            FontAttributes="Italic"
@@ -36,7 +36,15 @@
                 </StackLayout>
                 
             </Frame>
-            
+            <StackLayout Orientation="Horizontal">
+                <Frame HorizontalOptions="Fill" CornerRadius="10" Margin="20,25,0,0">
+                    <StackLayout>
+                        <Label Text="Fecha de pago "
+                               FontAttributes="Bold"
+                               FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
         </StackLayout>
         
     </Grid>
