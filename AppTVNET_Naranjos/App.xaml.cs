@@ -11,7 +11,7 @@ namespace AppTVNET_Naranjos
         {
             InitializeComponent();
             
-            MainPage = new NavigationPage(new Login());
+            MainPage =new NavigationPage (new VTabbedNavegation());
 
         }
 
@@ -25,6 +25,7 @@ namespace AppTVNET_Naranjos
 
         protected override void OnResume()
         {
+
         }
     }
 }

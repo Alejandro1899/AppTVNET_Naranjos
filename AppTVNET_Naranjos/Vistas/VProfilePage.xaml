@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTVNET_Naranjos.Vistas.VProfilePage"
+             IconImageSource="profile.png">
+    
+    <Grid RowDefinitions="100,*"
+          Margin="0,10,0,0">
+        
+        <StackLayout>
+            <Image Source="Logo_remasterTVNET.png"
+                   HeightRequest="60" />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1"
+                     VerticalOptions="StartAndExpand">
+            
+            <Frame  HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="15">
+
+                <StackLayout VerticalOptions="Start"
+                             HorizontalOptions="CenterAndExpand">
+                    <Image Source="profile.png"
+                           HeightRequest="80" />
+                    
+
+                    <Label Text="joel "
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           HorizontalOptions="Center" />
+                    <Label Text="No de contrato"
+                           FontAttributes="Italic"
+                           FontSize="Caption"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+                
+            </Frame>
+            
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>
