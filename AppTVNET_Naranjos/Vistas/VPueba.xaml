@@ -5,9 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Formsl! que rollo pollo"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
             <Label Text="PRUEBA 02 DE FUNCIONAMIENTO"
+                   FontAttributes="Bold"
+                   FontSize="Header" />
+
+            <Label Text="PRUEBA 03 DE FUNCIONAMIENTO"
                    FontAttributes="Bold"
                    FontSize="Header" />
         </StackLayout>
