@@ -4,7 +4,7 @@
              x:Class="AppTVNET_Naranjos.Vistas.VPueba">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Welcome to Xamarin.Formsl! que rollo pollo"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Label Text="Acutalizacion numero 1 "
