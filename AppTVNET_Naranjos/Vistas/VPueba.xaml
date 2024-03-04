@@ -7,7 +7,7 @@
             <Label Text="Welcome to Xamarin.Formsl! que rollo pollo"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="luis joel alejandro "
+            <Label Text="PRUEBA 02 DE FUNCIONAMIENTO"
                    FontAttributes="Bold"
                    FontSize="Header" />
         </StackLayout>
