@@ -25,7 +25,7 @@
                            HeightRequest="80" />
                     
 
-                    <Label Text="joel "
+                    <Label Text="Nombre de usuario "
                            FontAttributes="Bold"
                            FontSize="Large"
                            HorizontalOptions="Center" />
