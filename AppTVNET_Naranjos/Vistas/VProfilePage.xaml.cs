@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppTVNET_Naranjos.VistaModelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace AppTVNET_Naranjos.Vistas
         public VProfilePage()
         {
             InitializeComponent();
+            BindingContext = new ProfileView(Navigation);
         }
     }
 }

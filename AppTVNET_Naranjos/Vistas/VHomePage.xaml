@@ -13,10 +13,14 @@
         <StackLayout Grid.Row="1">
             <Frame  HorizontalOptions="CenterAndExpand"
                     VerticalOptions="StartAndExpand"
+                    
                    CornerRadius="15">
                 <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" >
                 
                     <Label Text="cargando" HorizontalOptions="Center" />
+
+                    <Image Source="planes_paquetes.jpg" />
+
                 </StackLayout>
             </Frame>
         </StackLayout>

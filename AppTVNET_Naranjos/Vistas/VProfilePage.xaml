@@ -9,7 +9,7 @@
         
         <StackLayout>
             <Image Source="Logo_remasterTVNET.png"
-                   HeightRequest="60" />
+                   HeightRequest="80" />
         </StackLayout>
 
         <StackLayout Grid.Row="1"
@@ -17,31 +17,85 @@
             
             <Frame  HorizontalOptions="CenterAndExpand"
                     VerticalOptions="FillAndExpand"
-                    CornerRadius="15">
+                    CornerRadius="15" Margin="15,10,10,10">
 
-                <StackLayout VerticalOptions="Start"
-                             HorizontalOptions="CenterAndExpand">
+                <Grid ColumnDefinitions="100,*" >
+
+                    <StackLayout>
+                        
                     <Image Source="profile.png"
-                           HeightRequest="80" />
-                    
+                           HeightRequest="60" />
+                    </StackLayout>
 
-                    <Label Text="Nombre de usuario "
+                <StackLayout Grid.Column="1">
+
+                    <Label TextColor="Black"
+                           Text="Nombre de usuario "
                            FontAttributes="Bold"
                            FontSize="Medium"
                            HorizontalOptions="Center" />
-                    <Label Text="No de contrato"
+                    
+                    <Label Text="No de contrato" TextColor="Black"
                            FontAttributes="Italic"
                            FontSize="Caption"
                            HorizontalOptions="Center" />
                 </StackLayout>
+                    </Grid>
                 
             </Frame>
-            <StackLayout Orientation="Horizontal">
-                <Frame HorizontalOptions="Fill" CornerRadius="10" Margin="20,25,0,0">
-                    <StackLayout>
-                        <Label Text="Fecha de pago "
+            <StackLayout Orientation="Vertical">
+                <Frame HorizontalOptions="Fill" CornerRadius="10" Margin="20,10,20,0">
+                    <StackLayout >
+                        <Label HorizontalOptions="Center"
+                               TextColor="Black"
+                               Text="Estatus del servicio "
                                FontAttributes="Bold"
-                               FontSize="20"/>
+                               FontSize="18" />
+                        <Frame HorizontalOptions="Fill">
+                            <Label HorizontalOptions="Center" Text="ACTIVO"
+                                   TextColor="Green"
+                                   FontSize="Medium" />
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <Frame HorizontalOptions="Fill"
+                       CornerRadius="10"
+                       Margin="20,10,20,0">
+                    <StackLayout>
+                        <Label HorizontalOptions="Center" TextColor="Black"
+                               Text="Fecha de pago "
+                               FontAttributes="Bold"
+                               FontSize="18" />
+                        <Frame HorizontalOptions="Fill">
+                            
+                            <Label HorizontalOptions="Center"
+                                   Text="DD/MM/AA"
+                                   FontAttributes="Bold"
+                                   TextColor="#010101"
+                                   FontSize="Medium" />
+                        </Frame>
+
+                    </StackLayout>
+                </Frame>
+                <Frame HorizontalOptions="Fill"
+                       CornerRadius="10"
+                       Margin="20,10,20,0">
+                    
+                    <StackLayout>
+                        <Label HorizontalOptions="Center"
+                               TextColor="Black"
+                               Text="Servicio contratado "
+                               FontAttributes="Bold"
+                               FontSize="18" />
+                        <Frame HorizontalOptions="Fill">
+                            
+                            <Label HorizontalOptions="Center"
+                                   Text="Paquete Basico"
+                                   FontAttributes="Bold"
+                                   TextColor="#010101"
+                                   FontSize="Medium" />
+                        </Frame>
+
                     </StackLayout>
                 </Frame>
             </StackLayout>
