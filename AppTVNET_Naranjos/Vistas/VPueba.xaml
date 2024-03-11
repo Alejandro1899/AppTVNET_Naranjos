@@ -7,7 +7,13 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="Acutalizacion numero 1 "
+            <Label Text="Acutalizacion numero 1 " />
+            <Label Text="Welcome to Xamarin.Formsl! que rollo pollo"
+                VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label Text="PRUEBA 02 DE FUNCIONAMIENTO" />
+
+            <Label Text="PRUEBA 03 DE FUNCIONAMIENTO"
                    FontAttributes="Bold"
                    FontSize="Header" />
         </StackLayout>

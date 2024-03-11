@@ -10,16 +10,20 @@
                    HeightRequest="60"/>
         </StackLayout>
 
-        <StackLayout Grid.Row="1">
-            <Frame  HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="StartAndExpand"
-                   CornerRadius="15">
-                <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" >
-                
-                    <Label Text="cargando" HorizontalOptions="Center" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-        
+            <ScrollView VerticalOptions="FillAndExpand"
+                        Orientation="Vertical"
+                        VerticalScrollBarVisibility="Always">
+            <StackLayout Grid.Row="1">
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Fibre optica"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               FontSize="Medium" />
+                        <Image Source="https://i.ibb.co/x59jdzK/fibra-optica.jpg" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>
